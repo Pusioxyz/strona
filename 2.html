@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizyka</title>
+</head>
+<body>
+    
+    <a href="index.html">Strona główna</a><br>
+    <a href="1.html">Zadanie 1</a><br>
+    <a href="1.html">Zadanie 3</a><br>
+    <a href="1.html">Zadanie 4</a><br>
+	
+	<h1>Zadanie 2</h1>
+    <p>Jaki jest wzór na prędkość?</p>
+
+        <label><input type="radio" name="p"  id="a">v=s/t</label><br>
+        <label><input type="radio" name="p"  id="b">v=t/s</label><br>
+        <label><input type="radio" name="p"  id="c">v=s*t</label><br>
+        <button onclick="f()">Sprawdź</button>
+        <p id="w"></p>
+        </div>
+        
+        
+        <script>
+        function f()
+        {
+            //deklaracja zmiennych, czy zaznaczony
+            var a=document.getElementById("a").checked;
+            var b=document.getElementById("b").checked;
+            var c=document.getElementById("c").checked;
+            //testowanie wartosci zmiennych w konsoli przegladarki
+            
+            console.log(a, b, c);
+            
+            if(a==false&&b==false&&c==false)
+            {
+                document.getElementById("w").innerHTML = "Zaznacz odpowiedź";
+                w.style.color = "orange";
+            }
+            else
+            if(a==true)
+            {
+                document.getElementById("w").innerHTML = "TAK";
+                w.style.color = "green";
+            }
+            else
+            {
+                document.getElementById("w").innerHTML = "NIE";
+                w.style.color = "red";
+            }
+        }
+        </script>
+	   
+</body>
+</html>

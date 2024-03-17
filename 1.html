@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizyka</title>
+</head>
+<body>
+ 
+    <a href="index.html">Strona główna</a><br>
+    <a href="2.html">Zadanie 2</a><br>
+    <a href="1.html">Zadanie 3</a><br>
+    <a href="1.html">Zadanie 4</a><br>
+	   <h1>Zadanie 1</h1>
+    <p>Kierowca w ciągu <b>3 godzin</b> przejechał odległość <b>210km</b>
+       . Z jaką średnią prędkością się poruszał?</p>
+	   <input type="number" id="a" required><b>km/h</b><br>
+	   <input  type="button" onclick="f()" value="Sprawdź"><br>
+     <p id="b"></p>
+	   <script>
+	   function f()
+	   {
+	     var a=document.getElementById("a").value;
+        if(a==70)
+		{
+         document.getElementById("b").innerHTML="TAK";
+		 b.style.color="green";
+		 }
+        else
+		{
+        document.getElementById("b").innerHTML="NIE";
+		b.style.color="red";
+       }
+	   }
+	   </script>
+	   
+</body>
+</html>
